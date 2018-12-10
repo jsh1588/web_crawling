@@ -49,23 +49,26 @@
  
  (2) apache 설치
 ------------------------
-    1)apt-get install apache2 
-    2)https://webnautes.tistory.com/1028
+    1) apt-get install apache2 
+    2) https://webnautes.tistory.com/1028
     3) apache 서버 php 실행 오류
      ① https://stackoverflow.com/questions/47024111/apache-installing-and-running-php-files
 
  (3) php 설치
 ----------------
-    1) http://sarghis.com/blog/680/
+    1) apt install php
+    2) http://sarghis.com/blog/680/
  
  (4) mysql 설치
 --------------------
-    1) https://webnautes.tistory.com/1185
+    1) apt-get install mysql-server
+    2) https://webnautes.tistory.com/1185
 
  (5) phpmyadmin 설치
 --------------------
-    1) http://kkotkkio.tistory.com/40
-    2) demo server error 해결방법
+    1) apt-get install phpmyadmin
+    2) http://kkotkkio.tistory.com/40
+    3) demo server error 해결방법
      ① https://stackoverflow.com/questions/41191400/phpmyadmin-admin-page-   displays-only-demo-server
  
  (6) R & R Studio설치
