@@ -56,12 +56,14 @@
 
  (3) php 설치
 ----------------
-    1) apt install php
+    1) apt-get install php5 php5-common
+       apt-get install libapache2-mod-php5
+       apt-get install php5-mysql
     2) http://sarghis.com/blog/680/
  
  (4) mysql 설치
 --------------------
-    1) apt-get install mysql-server
+    1) apt-get install mysql-server mysql-client
     2) https://webnautes.tistory.com/1185
 
  (5) phpmyadmin 설치
