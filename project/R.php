@@ -36,7 +36,7 @@ $s='
 
 	result <- dbGetQuery(con, "SELECT * FROM crawling")
 
-	date_uni <- result %>% select(date)
+	date_uni <- result %>% select(date) %>% arrange(desc(date))
 
 	date_uni <- unique(date_uni)
 
@@ -77,7 +77,7 @@ $s='
 				plotOutput(outputId = "graph"),
 				textOutput(outputId = "text"),
 				h2("12 days from yesterday DATA"),
-				h2("Date : ", date_vec[1], " ~ ", date_vec[12])
+				h2("Date : ", date_vec[12], " ~ ", date_vec[1])
 			)
 		)
 	)
@@ -86,6 +86,9 @@ $s='
 		output$graph <- renderPlot({
 			data_graph <- result %>% filter(name == input$type)
                         ggplot(data_graph, aes(x=date, y=rank, group=1)) + geom_line(color="red", size=2)
+		})
+		output$text <- renderText({
+			paste("https://search.shopping.naver.com/search/all.nhn?where=all&frm=NVSCTAB&query=", input$type)
 		})
 	}
 
