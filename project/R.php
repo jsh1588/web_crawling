@@ -83,7 +83,7 @@ $s='
 				textOutput(outputId = "text"),
 				h2("12 days from yesterday DATA"),
 				h2("Date : ", date_vec[12], " ~ ", date_vec[1]),
-				textOutput(outputId = "text2")
+				tableOutput(outputId = "text2")
 			)
 		)
 	)
@@ -96,11 +96,11 @@ $s='
 		output$text <- renderText({
 			paste("sold: https://search.shopping.naver.com/search/all.nhn?where=all&frm=NVSCTAB&query=", input$type)
 		})
-		output$text2 <- renderText({
+		output$text2 <- renderTable({
 			t <- result %>% filter(date %in% date_vec)
 			t <- unique(t)
 			t <- t %>% filter(input$s_date == date)
-			paste(t[, 1])
+			t
 		})
 	}
 
