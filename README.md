@@ -49,8 +49,9 @@
  
  (2) apache 설치
 ------------------------
-    1) https://webnautes.tistory.com/1028
-    2) apache 서버 php 실행 오류
+    1)apt-get install apache2 
+    2)https://webnautes.tistory.com/1028
+    3) apache 서버 php 실행 오류
      ① https://stackoverflow.com/questions/47024111/apache-installing-and-running-php-files
 
  (3) php 설치
