@@ -1,17 +1,14 @@
 #!/usr/bin/php
 
 <?
-    include "/home/jsh1588/simplehtmldom_1_5/simple_html_dom.php";    
- 
-    /*if(!$_GET[page]) $page = 1;
-    else $page = $_GET[page];*/
-        
+    include "/home/jsh1588/simplehtmldom_1_5/simple_html_dom.php";
+
     $html = file_get_html("https://datalab.naver.com/");
 	$i = 0;
 	$o = -1;
     if($html)
     {
-        
+
         header('Content-Type: text/xml; charset=utf-8');
 	$servername = "localhost";
 	$username = "root";
