@@ -75,16 +75,23 @@
  
  (6) R & R Studio설치
 --------------------
-    1) https://www.rstudio.com/products/rstudio/download-server/
+    1) apt-get install r-base
+       apt-get install gdebi-core
+    2) https://www.rstudio.com/products/rstudio/download-server/
  
  (7) DBI & RMySQL 설치
 -------------------
-    1) https://hjpco.wordpress.com/2017/05/30/aws-rmysql-%EB%B0%8F-dbi-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/
-    2) 설치 오류
+    1) apt-get install mysql-devel
+       apt-get install r-devel
+    2) https://hjpco.wordpress.com/2017/05/30/aws-rmysql-%EB%B0%8F-dbi-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/
+    3) 설치 오류
      ① https://stackoverflow.com/questions/25368708/cant-install-rmysql-on-r-3-0-2-ubuntu-14-04
 
  (8) Shiny 설치
 -----------------------------
-    1) http://blog.hyeongeun.com/23
-    2) shiny tutorial
+    1) apt-get install gdebi-core
+       wget https://download2.rstudio.org/rstudio-server-1.1.456-amd64.deb
+       gdebi rstudio-server-1.1.456-amd64.deb
+    2) http://blog.hyeongeun.com/23
+    3) shiny tutorial
      ①http://shiny.rstudio.com/
