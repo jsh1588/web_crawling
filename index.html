@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>
+<?
+    //1.실행됨 네이버페이지가 변경되버림
+        $content = file_get_contents('https://naver.com');
+       if ($content !== false) {
+             echo $content; 
+        } else {
+             echo 'error';
+        }
+?>
+
+<!-- //2.실행됨 네이버페이지가 변경되버림 -->
+<!-- //$f = file('https://datalab.naver.com/home/sectionSearch.naver');
+//var_dump( $f ); -->
+     
+
+<!-- //3.html태그를 가져오기로 기대하나 에러 -->
+<!-- //$html = file_get_html('http://www.google.com/');     
+//foreach($html->find('img') as $element) {
+//    echo $element->src . '<br>';
+//  }   -->
+
+
+<!-- //4. Create a stream 스트림방식 사용 에러 안남  -->
+<!-- $opts = array( 
+'http' =>array( 
+'method' => "GET" , 
+'header' => "Accept-language: en\r\n" . 
+"Cookie: foo=bar\r\n" 
+) 
+); 
+
+$context = stream_context_create ( $opts ); 
+
+// Open the file using the HTTP headers set above 
+$file = file_get_contents ( 'https://datalab.naver.com/home/sectionSearch.naver' , false , $context ); 
+       if ($file !== false) {
+                 echo $file; 
+            } else {
+                 echo 'error';
+            } -->
+
+
+</h1>
+<p>sad</p> 
+</body>
+</html>
