@@ -15,7 +15,8 @@
     2) phpmyadmin에 저장(insert query사용)
      ①최초 12일치
    ![enter image description here](https://lh3.googleusercontent.com/Q3WghJE1HBElb-NwoZAZxpYdH3duk1keB4rrfB4omWtmebPBb7jtQRPtUlH5L20Z7vvkYlI1DioT=s0 "DBTable_save.png")
-          ②최근 1일치(데이터 중복 저장 방지)
+          
+	②최근 1일치(데이터 중복 저장 방지)
    ![enter image description here](https://lh3.googleusercontent.com/v-7LhFc3gAjkZxinP0og8W7ahaI6AFvAnuz8QoW5Irf5kxd8H-gYcIh3bM09LkjPhYUCqJ5UAyd0=s0 "gplus9219611.png")
          
 
