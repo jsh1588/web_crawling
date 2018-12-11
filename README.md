@@ -1,5 +1,5 @@
-﻿ 1.web_crawling
- ========================
+﻿1.web_crawling
+========================
  
  (1) simple html dom paser
 -----------------------------
@@ -13,7 +13,11 @@
 ![enter image description here](https://lh3.googleusercontent.com/MdII4WaZbOgoNpG7nsm1y2Q0kMRFiM3gqAT1CvTQtF5k2Cc9VAnHADpYo4MtdvjWY0jaE3LYiwkN=s0 "DBTable.png")
 		
     2) phpmyadmin에 저장(insert query사용)
+     ①최초 12일치
    ![enter image description here](https://lh3.googleusercontent.com/Q3WghJE1HBElb-NwoZAZxpYdH3duk1keB4rrfB4omWtmebPBb7jtQRPtUlH5L20Z7vvkYlI1DioT=s0 "DBTable_save.png")
+	      ②최근 1일치(데이터 중복 저장 방지)
+         ![enter image description here](https://lh3.googleusercontent.com/v-7LhFc3gAjkZxinP0og8W7ahaI6AFvAnuz8QoW5Irf5kxd8H-gYcIh3bM09LkjPhYUCqJ5UAyd0=s0 "gplus9219611.png")
+         
 
 2.R
 ============
@@ -25,22 +29,24 @@
 ---------------------------
     1) phpmyadmin 접속
     2) web_crawling에서 저장한 데이터 불러오기
-    3) 데이터 중복 제거 & 데이터형 변환(list -> vector)
+    3) 데이터 중복 제거
 
  (3) 웹페이지 출력
 -------------------------------
     1) shiny패키지 사용
+    2) 그래프 출력
+    3) 날짜에 맞는 순위 출력
+   ![enter image description here](https://lh3.googleusercontent.com/j-HSC567TsDRQfhZRl5TeoR8Qp8Qp6N-pS-2UcuFt7rAKiZFkPNH4EnsN9UHX2R5zVPZzjWQorpJ=s0 "gplus2057848799.png")
+   ![enter image description here](https://lh3.googleusercontent.com/uY3gro-0cUydRYZ9xJJBHpqyPFiXKmvACmYw6BwlIbT3yOYjCbGe2lISUfolQJ636yfD6gMKvxyV=s0 "gplus385939521.png")
  
- (4) 주기적 웹크롤링
---------------------------
+3.주기적 웹크롤링
+===============
     1)crontab 사용 & 로그로 확인
-   ![enter image description here](https://lh3.googleusercontent.com/lghmW6vdsZpmQpFvxqQ3uS39Wk8MZ8oiCRuWROL8o6Zcbw76FRIsmAaLioAFR61lY8cVtFz4pid8=s0 "crontab.png")
+  ![enter image description here](https://lh3.googleusercontent.com/tMi1EqaawLLoKVJXB80NK5qI2VWDJ3hq6lw9SBE6fbzc5pHMwlnPNU4pMGf7SkmoJ7vRVvvaZJDh=s0 "gplus2057851888.png")
   
-   ![enter image description here](https://lh3.googleusercontent.com/7sKXYTnB7p6mphAvVXH-0-qjEegSFdFsNMz7cG-w9-DVZm5ni5vZz_p9ScHHKnKHmKgGK0VElmy0=s0 "c_log1.png")
-    
-   ![enter image description here](https://lh3.googleusercontent.com/osBWaGvSh0oo-ugs2JaFbu7NFRFsbfr1hHUbgTLRYC7RvSIFZ-7EW3GY8-INFGuyM9kkNanwWcQl=s0 "c_log2.png")
+![enter image description here](https://lh3.googleusercontent.com/uQbY86JYzKEKB70uEIB9Z_4vkJvTvI_Uqa-qjO186At7Fko23QT5NjOQIxLPDPEdiRb_QTdbzbqb=s0 "gplus1756957686.png")
 
-3.Installation
+4.Installation
 =============
  
  (1) simple html dom paser 설치
