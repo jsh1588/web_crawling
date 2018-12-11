@@ -7,6 +7,7 @@
 	$o = -1;
     if($html)
     {
+
         header('Content-Type: text/xml; charset=utf-8');
 	$servername = "localhost";
 	$username = "root";
@@ -25,31 +26,44 @@
 			if($date != null && $o <=10){
 				$o = $o+1;
 				$i = 0;
+				echo $o;
+				echo " ";
+				echo $i;
+				echo " ";
 				$date_remove = substr($date, 0, 10);
 				$list[$o][$i] = $date_remove;
+				echo $list[$o][$i];
+				echo "\n";
 			}
 			$i = 1;
 			foreach($article->find('li[class=list]') as $article1) {
 			$name    = $article1->find('span.title', 0)->plaintext;
 			if($name != null){
+				echo $o;
+				echo " ";
+				echo $i;
+				echo " ";
 				$list[$o][$i] = $name;
+				echo $list[$o][$i];
+				echo "\n";
 				$i = $i+1;
 				}
 			}
         }
-	for($i=1; $i<11; $i++)
+	for($o=0; $o<12; $o++)
 	{
-		echo $list[11][0]." ".$i." ".$list[11][$i];
-		echo "\n";
-		$sql = "INSERT INTO crawling(date, rank, name)
-			VALUES('{$list[11][0]}', '{$i}', '{$list[11][$i]}')";
-		if($conn->query($sql) == TRUE)
+		for($i=1; $i<11; $i++)
 		{
-			//echo "success!!";
-		}
-		else
-		{
-			echo "error: ".$sql."<br>".$conn->error;
+			$sql = "INSERT INTO crawling(date, rank, name)
+				VALUES('{$list[$o][0]}', '{$i}', '{$list[$o][$i]}')";
+			if($conn->query($sql) == TRUE)
+			{
+				//echo "success!!";
+			}
+			else
+			{
+				echo "error: ".$sql."<br>".$conn->error;
+			}
 		}
 	}
 	$conn->close();
