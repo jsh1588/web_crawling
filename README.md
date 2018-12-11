@@ -39,7 +39,8 @@
     3) 날짜에 맞는 순위 출력
    ![enter image description here](https://lh3.googleusercontent.com/j-HSC567TsDRQfhZRl5TeoR8Qp8Qp6N-pS-2UcuFt7rAKiZFkPNH4EnsN9UHX2R5zVPZzjWQorpJ=s0 "gplus2057848799.png")
    ![enter image description here](https://lh3.googleusercontent.com/uY3gro-0cUydRYZ9xJJBHpqyPFiXKmvACmYw6BwlIbT3yOYjCbGe2lISUfolQJ636yfD6gMKvxyV=s0 "gplus385939521.png")
-       4) url 주소로 쇼핑 사이트 이동
+    
+    4) url 주소로 쇼핑 사이트 이동
         ![enter image description here](https://lh3.googleusercontent.com/q7khxEsaANOSDervklADkQmfTsR0OjLN0tB549asY5c9j670z_x4tCXjuLMp_QWEDeI5YJ7TK3Ry=s0 "gplus448712047.png")
  
 3.주기적 웹크롤링
